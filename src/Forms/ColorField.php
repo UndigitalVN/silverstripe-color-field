@@ -2,10 +2,10 @@
 
 namespace RyanPotter\SilverStripeColorField\Forms;
 
+use SilverStripe\Core\Validation\ValidationResult;
 use SilverStripe\Forms\TextField;
 use SilverStripe\ORM\FieldType\DBHTMLText;
 use SilverStripe\View\Requirements;
-
 /**
  * Class ColorField
  * @package RyanPotter\SilverStripeColorField\Forms
@@ -93,7 +93,7 @@ class ColorField extends TextField
    * @param \SilverStripe\Forms\Validator $validator
    * @return bool
    */
-  function validate($validator): bool
+  function validate($validator): ValidationResult
   {
     return true;
   }
