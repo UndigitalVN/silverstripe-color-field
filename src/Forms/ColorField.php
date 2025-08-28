@@ -93,7 +93,7 @@ class ColorField extends TextField
    * @param \SilverStripe\Forms\Validator $validator
    * @return bool
    */
-  function validate($validator): ValidationResult
+  public function validate(): ValidationResult
   {
     return true;
   }
